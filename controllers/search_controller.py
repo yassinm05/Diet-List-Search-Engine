@@ -1,19 +1,25 @@
 import json
-import Building_II as B
-import Kgrams as K
-import EditDistance as E
-import MetaphoneSearch as M
-import Jaccard as J
 from collections import defaultdict
+from pathlib import Path
+
+from algorithms import edit_distance as E
+from algorithms import jaccard as J
+from algorithms import kgrams as K
+from algorithms import metaphone_search as M
+from builders import inverted_index_builder as B
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+INDEX_FILE = PROJECT_ROOT / "indexs" / "inverted_index.json"
+DOCS_FILE = PROJECT_ROOT / "scientific_diets.json"
 
 # 1. Initialize empty dictionaries so the app survives missing files
 index_db = {}
 doc_map = {}
 
 try:
-    with open("inverted_index.json", "r", encoding="utf-8") as f: 
+    with INDEX_FILE.open("r", encoding="utf-8") as f:
         index_db = json.load(f)
-    with open("scientific_diets.json", "r", encoding="utf-8") as f: 
+    with DOCS_FILE.open("r", encoding="utf-8") as f:
         doc_map = {str(d["DocID"]): d["Title"] for d in json.load(f)}
 except FileNotFoundError as e:
     print(f"WARNING: Missing main database file! {e}")

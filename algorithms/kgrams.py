@@ -1,13 +1,18 @@
 import json
-import BuildingKgramsIndex as K
 from collections import Counter
+from pathlib import Path
 
-def k_grams(query, input_file="k_gram_index.json"):
+from builders import kgram_index_builder as K
+
+DEFAULT_INDEX_FILE = Path(__file__).resolve().parents[1] / "indexs" / "k_gram_index.json"
+
+def k_grams(query, input_file=DEFAULT_INDEX_FILE):
     query = query.lower()
-    
-    query_grams = K.BuildGram(query, k=2)
 
-    with open(input_file, 'r', encoding='utf-8') as f:
+    query_grams = K.BuildGram(query, k=2)
+    index_path = Path(input_file)
+
+    with index_path.open('r', encoding='utf-8') as f:
         k_gram_index = json.load(f)
 
     all_candidate_words = []
