@@ -1,6 +1,6 @@
 # 🔍 Information Retrieval Search Engine
 
-**Author:** Yassin Mahmoud  
+**Author:** Yassin Mahmoud & Mohamed Mahmoud
 **Domain:** Scientific Diets & Globally Adaptive Nutritional Search  
 
 ---
