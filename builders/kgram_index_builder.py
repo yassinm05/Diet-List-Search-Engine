@@ -1,5 +1,10 @@
 import json
-from collections import defaultdict, Counter
+from collections import defaultdict
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_INPUT_FILE = PROJECT_ROOT / "indexs" / "inverted_index.json"
+DEFAULT_OUTPUT_FILE = PROJECT_ROOT / "indexs" / "k_gram_index.json"
 
 def BuildGram(Text, k):
     Text = "$" + Text + "$"
@@ -15,12 +20,15 @@ def BuildGram(Text, k):
     
     return list(unique_grams)
 
-def K_Gram_Indexing(k, input_file="inverted_index.json", output_file="k_gram_index.json"):
+def K_Gram_Indexing(k, input_file=DEFAULT_INPUT_FILE, output_file=DEFAULT_OUTPUT_FILE):
+    input_path = Path(input_file)
+    output_path = Path(output_file)
+
     try:
-        with open(input_file, 'r', encoding='utf-8') as f:
+        with input_path.open('r', encoding='utf-8') as f:
             inverted_index = json.load(f)
     except FileNotFoundError:
-        print(f"Error: The file '{input_file}' was not found.")
+        print(f"Error: The file '{input_path}' was not found.")
         return
         
     
@@ -36,7 +44,8 @@ def K_Gram_Indexing(k, input_file="inverted_index.json", output_file="k_gram_ind
             k_gram_index[bg].append(word)
 
     
-    with open(output_file, 'w', encoding='utf-8') as f:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open('w', encoding='utf-8') as f:
         json.dump(k_gram_index, f, indent=4)
 
 if __name__ == "__main__":

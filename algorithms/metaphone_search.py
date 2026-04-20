@@ -1,24 +1,26 @@
 import json
 import jellyfish
+from pathlib import Path
 
-def phonetic_candidates(query_word, index_file="metaphone_index.json"):
+DEFAULT_INDEX_FILE = Path(__file__).resolve().parents[1] / "indexs" / "metaphone_index.json"
+
+
+def phonetic_candidates(query_word, index_file=DEFAULT_INDEX_FILE):
     query_word = query_word.lower().strip()
-    
-    
+
     typo_code = jellyfish.metaphone(query_word)
     print(f"Typo: '{query_word}' -> Phonetic Code: [{typo_code}]")
-    
-    
+
+    index_path = Path(index_file)
     try:
-        with open(index_file, 'r', encoding='utf-8') as f:
+        with index_path.open('r', encoding='utf-8') as f:
             metaphone_index = json.load(f)
     except FileNotFoundError:
-        print(f"Error: Could not find {index_file}. Run the build script first.")
+        print(f"Error: Could not find {index_path}. Run the build script first.")
         return []
 
-    
     candidates = metaphone_index.get(typo_code, [])
-    
+
     return candidates
 
 if __name__ == "__main__":

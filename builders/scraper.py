@@ -3,8 +3,12 @@ from bs4 import BeautifulSoup
 import json
 import time
 import re
+from pathlib import Path
 
-def scrape_scientific_diets(max_documents=50):
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_OUTPUT_FILE = PROJECT_ROOT / "scientific_diets.json"
+
+def scrape_scientific_diets(max_documents=50, output_file=DEFAULT_OUTPUT_FILE):
     base_url = "https://en.wikipedia.org"
     list_url = f"{base_url}/wiki/List_of_diets"
     
@@ -78,11 +82,11 @@ def scrape_scientific_diets(max_documents=50):
         time.sleep(1)
         
     # We'll save it as scientific_diets.json this time
-    output_filename = "scientific_diets.json"
-    with open(output_filename, 'w', encoding='utf-8') as f:
+    output_path = Path(output_file)
+    with output_path.open('w', encoding='utf-8') as f:
         json.dump(documents, f, indent=4, ensure_ascii=False)
-        
-    print(f"\nScraping complete! Saved {len(documents)} documents to {output_filename}")
+
+    print(f"\nScraping complete! Saved {len(documents)} documents to {output_path}")
 
 if __name__ == "__main__":
     scrape_scientific_diets(max_documents=50)

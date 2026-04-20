@@ -1,14 +1,16 @@
 import tkinter as tk
 from tkinter import ttk
-import Search_controller as sc
+from controllers import search_controller as sc
 
 def handle_search(entry_widget, result_box, search_type):
     query = entry_widget.get().strip()
     if not query:
         return
-        
+
     result_box.delete(1.0, tk.END) 
-    
+
+    results = ""
+
     # Delegate all the hard work to the controller
     if search_type == "exact":
         results = sc.run_exact_search(query)
