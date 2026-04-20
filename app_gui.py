@@ -27,16 +27,22 @@ def create_tab(notebook, title, search_type, description):
     frame = ttk.Frame(notebook)
     notebook.add(frame, text=title)
     
-    ttk.Label(frame, text=description, font=("Arial", 12)).pack(pady=10)
+    # Header Label
+    ttk.Label(frame, text=description, font=("Helvetica", 12, "bold")).pack(pady=15)
     
     search_frame = ttk.Frame(frame)
     search_frame.pack(pady=5)
     
-    entry = ttk.Entry(search_frame, width=40, font=("Arial", 12))
-    entry.pack(side=tk.LEFT, padx=5)
+    # Search Entry
+    entry = ttk.Entry(search_frame, width=40, font=("Helvetica", 12))
+    entry.pack(side=tk.LEFT, padx=10)
     
-    result_box = tk.Text(frame, height=15, width=60, font=("Arial", 11))
-    
+    # Stylish Text Box (Dark mode with Monospaced font for aligned columns)
+    result_box = tk.Text(frame, height=15, width=70, font=("Consolas", 11), 
+                         bg="#282c34", fg="#abb2bf", insertbackground="white", 
+                         relief=tk.FLAT, padx=10, pady=10)
+                         
+    # Search Button
     btn = ttk.Button(search_frame, text="Search", 
                      command=lambda: handle_search(entry, result_box, search_type))
     btn.pack(side=tk.LEFT)
@@ -47,16 +53,42 @@ def create_tab(notebook, title, search_type, description):
 def main():
     root = tk.Tk()
     root.title("Information Retrieval Search Engine")
-    root.geometry("600x500")
+    root.geometry("650x550") # Expanded slightly to fit padding nicely
     
+    # --- STYLING ---
+    style = ttk.Style()
+    
+    # 'clam' is a cleaner base theme than the default Windows/Mac look
+    if 'clam' in style.theme_names():
+        style.theme_use('clam')
+        
+    bg_color = "#f4f6f9" # Light slate/gray
+    root.configure(bg=bg_color)
+    
+    # Apply colors to frames and labels
+    style.configure("TFrame", background=bg_color)
+    style.configure("TLabel", background=bg_color, foreground="#2c3e50")
+    
+    # Style the notebook (tabs)
+    style.configure("TNotebook", background=bg_color, borderwidth=0)
+    style.configure("TNotebook.Tab", font=("Helvetica", 10, "bold"), padding=[10, 5], background="#e1e8ed", foreground="#7f8c8d")
+    style.map("TNotebook.Tab", 
+              background=[("selected", "#ffffff")], 
+              foreground=[("selected", "#2980b9")]) # Blue text on active tab
+              
+    # Style the Search button
+    style.configure("TButton", font=("Helvetica", 10, "bold"), background="#3498db", foreground="white", padding=5)
+    style.map("TButton", background=[("active", "#2980b9")]) # Darker blue when clicked
+    
+    # --- GUI SETUP ---
     notebook = ttk.Notebook(root)
-    notebook.pack(expand=True, fill='both', padx=10, pady=10)
+    notebook.pack(expand=True, fill='both', padx=15, pady=15)
     
     create_tab(notebook, "Exact Match", "exact", "Standard Inverted Index Search")
-    create_tab(notebook, "Spelling (k-grams)", "spelling", "Tolerant Retrieval: k-grams + Edit Distance")
-    create_tab(notebook, "Phonetic (Metaphone)", "phonetic", "Tolerant Retrieval: Metaphone Matching")
+    create_tab(notebook, "Spelling", "spelling", "Tolerant Retrieval: k-grams + Edit Distance")
+    create_tab(notebook, "Phonetic", "phonetic", "Tolerant Retrieval: Metaphone Matching")
     create_tab(notebook, "Smart Search", "smart", "Combined Engine: Exact Fallback to Tolerant Algorithms")
-    create_tab(notebook, "Jaccard Similarity", "jaccard", "Tolerant Retrieval: Jaccard Coefficient Scoring")
+    create_tab(notebook, "Jaccard", "jaccard", "Tolerant Retrieval: Jaccard Coefficient Scoring")
     
     root.mainloop()
 

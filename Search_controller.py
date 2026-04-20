@@ -4,6 +4,7 @@ import Kgrams as K
 import EditDistance as E
 import MetaphoneSearch as M
 import Jaccard as J
+from collections import defaultdict
 
 # 1. Initialize empty dictionaries so the app survives missing files
 index_db = {}
@@ -19,120 +20,109 @@ except FileNotFoundError as e:
 
 
 # 2. Helper Functions
-def get_exact_docs(term):
-    """Retrieves and sorts the documents for a correctly spelled term."""
-    if term not in index_db: return []
-    results = index_db[term]
-    return sorted(results.items(), key=lambda x: x[1], reverse=True)
+def aggregate_docs(term_doc_dicts):
+    """Combines document scores from multiple words."""
+    if not term_doc_dicts: return []
+    
+    combined_scores = defaultdict(int)
+    for doc_dict in term_doc_dicts:
+        for doc_id, score in doc_dict.items():
+            combined_scores[doc_id] += score
+            
+    # Sort by the combined score in descending order
+    return sorted(combined_scores.items(), key=lambda x: x[1], reverse=True)
 
-def format_results(term, docs_list, corrected_from=None):
+def format_results(query_str, docs_list, corrected_from=None):
     """Formats the array of documents into a clean string."""
     if not docs_list:
-        return f"No documents found containing the word '{term}'."
+        return f"No documents found for '{query_str}'."
     
     output = ""
     if corrected_from:
-        output += f"Typo detected: '{corrected_from}'.\n"
-        output += f"Showing results for corrected word: '{term}'\n"
+        output += f"Typo detected in: '{corrected_from}'.\n"
+        output += f"Showing results for corrected query: '{query_str}'\n"
     else:
-        output += f"Showing exact matches for: '{term}'\n"
+        output += f"Showing exact matches for: '{query_str}'\n"
         
     output += "-" * 50 + "\n"
     for doc_id, score in docs_list:
         title = doc_map.get(str(doc_id), "Unknown Document")
-        output += f"Score: {score:2} | DocID: {doc_id:2} | Title: {title}\n"
+        output += f"Score: {score:4} | DocID: {doc_id:2} | Title: {title}\n"
     return output
 
 
-# 3. Main Search Flows
-def run_exact_search(query):
+# 3. Master Search Engine
+def _process_search(query, get_best_match_func, prefix=""):
+    """
+    Master function that handles tokenizing, multi-word dictionary lookups, 
+    document aggregation, and formatting.
+    """
     tokens = B.PreProcessText(query)
     if not tokens: return "Please enter a valid search term."
     
-    target_word = tokens[0]
-    docs = get_exact_docs(target_word)
+    corrected_tokens = []
+    term_doc_dicts = []
+    was_corrected = False
+
+    for token in tokens:
+        if token in index_db:
+            # Exact match found, no correction needed
+            corrected_tokens.append(token)
+            term_doc_dicts.append(index_db[token])
+        else:
+            # Word not found; apply the specific algorithm passed via get_best_match_func
+            best_match = get_best_match_func(token) if get_best_match_func else None
+            
+            if best_match:
+                corrected_tokens.append(best_match)
+                term_doc_dicts.append(index_db.get(best_match, {}))
+                was_corrected = True
+            else:
+                corrected_tokens.append(token) # Keep original if no suggestion
+
+    docs = aggregate_docs(term_doc_dicts)
+    original_query = " ".join(tokens)
+    final_query = " ".join(corrected_tokens)
     
-    if not docs:
-        return f"'{target_word}' not found in the dictionary. Try the other tabs!"
-    return format_results(target_word, docs)
+    # Handle the case where exact search yields no results
+    if not docs and not get_best_match_func:
+        return f"None of the words in '{original_query}' were found. Try the other tabs!"
+        
+    return prefix + format_results(final_query, docs, corrected_from=(original_query if was_corrected else None))
+
+
+# 4. Main Search Flows 
+def run_exact_search(query):
+    # Pass 'None' for the match function since we don't want to correct typos here
+    return _process_search(query, None)
 
 def run_spelling_search(query):
-    tokens = B.PreProcessText(query)
-    if not tokens: return "Please enter a valid search term."
-    
-    target_word = tokens[0]
-    
-    if target_word in index_db:
-        return f"'{target_word}' is already spelled correctly!\n\n" + format_results(target_word, get_exact_docs(target_word))
+    def get_match(token):
+        candidates = K.k_grams(token)
+        return min(candidates, key=lambda c: E.Edit_distance(token, c)) if candidates else None
         
-    # Ask the Kgrams module for candidates
-    candidates = K.k_grams(target_word)
-    if not candidates: 
-        return f"Could not find any spelling suggestions for '{target_word}'."
-    
-    best_match = min(candidates, key=lambda c: E.Edit_distance(target_word, c))
-    docs = get_exact_docs(best_match)
-    
-    return format_results(best_match, docs, corrected_from=target_word)
+    return _process_search(query, get_match)
 
 def run_phonetic_search(query):
-    tokens = B.PreProcessText(query)
-    if not tokens: return "Please enter a valid search term."
-    
-    target_word = tokens[0]
-    
-    if target_word in index_db:
-        return f"'{target_word}' is already spelled correctly!\n\n" + format_results(target_word, get_exact_docs(target_word))
+    def get_match(token):
+        candidates = M.phonetic_candidates(token)
+        return min(candidates, key=lambda c: E.Edit_distance(token, c)) if candidates else None
         
-    # Ask the MetaphoneSearch module for candidates
-    candidates = M.phonetic_candidates(target_word)
-    
-    if not candidates: 
-        return f"Could not find phonetic matches sounding like '{target_word}'."
-    
-    best_match = min(candidates, key=lambda c: E.Edit_distance(target_word, c))
-    docs = get_exact_docs(best_match)
-    
-    return format_results(best_match, docs, corrected_from=target_word)
+    return _process_search(query, get_match)
 
 def run_smart_search(query):
-    tokens = B.PreProcessText(query)
-    if not tokens: return "Please enter a valid search term."
-    
-    target_word = tokens[0]
-    
-    # 1. Exact Match Check
-    if target_word in index_db:
-        return f"Exact Match Found!\n\n" + format_results(target_word, get_exact_docs(target_word))
+    def get_match(token):
+        candidates = set()
+        candidates.update(K.k_grams(token) or [])
+        candidates.update(M.phonetic_candidates(token) or [])
+        return min(list(candidates), key=lambda c: E.Edit_distance(token, c)) if candidates else None
         
-    # 2. Pool Candidates from both modules
-    candidates = set()
-    candidates.update(K.k_grams(target_word))
-    candidates.update(M.phonetic_candidates(target_word))
-    
-    if not candidates:
-        return f"No matches found using any algorithm for '{target_word}'."
-        
-    # 3. Find the best match from the combined pool
-    best_match = min(list(candidates), key=lambda c: E.Edit_distance(target_word, c))
-    docs = get_exact_docs(best_match)
-    
-    return "SMART SEARCH ACTIVATED\n" + format_results(best_match, docs, corrected_from=target_word)
+    return _process_search(query, get_match, prefix="SMART SEARCH ACTIVATED\n")
 
 def run_jaccard_search(query):
-    tokens = B.PreProcessText(query)
-    if not tokens: return "Please enter a valid search term."
-    
-    target_word = tokens[0]
-    
-    if target_word in index_db:
-        return f"'{target_word}' is already spelled correctly!\n\n" + format_results(target_word, get_exact_docs(target_word))
+    def get_match(token):
+        candidates = K.k_grams(token)
+        # Note the max() here because Jaccard looks for highest similarity, not lowest distance
+        return max(candidates, key=lambda c: J.jaccard_similarity(token, c)) if candidates else None
         
-    candidates = K.k_grams(target_word)
-    if not candidates: 
-        return f"Could not find any spelling suggestions for '{target_word}'."
-    
-    best_match = max(candidates, key=lambda c: J.jaccard_similarity(target_word, c))
-    docs = get_exact_docs(best_match)
-    
-    return format_results(best_match, docs, corrected_from=target_word)
+    return _process_search(query, get_match)
