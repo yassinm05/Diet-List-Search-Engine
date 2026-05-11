@@ -1,0 +1,2444 @@
+[
+    {
+        "Query": "DASH diet to control hypertension",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 1,
+                "Score": 3
+            },
+            {
+                "DocID": 2,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Ketogenic diet high-fat low-carbohydrate epilepsy",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 3
+            },
+            {
+                "DocID": 20,
+                "Score": 2
+            },
+            {
+                "DocID": 6,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "Gluten-free diet celiac disease treatment",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 9,
+                "Score": 3
+            },
+            {
+                "DocID": 12,
+                "Score": 3
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Diabetic diet high blood sugar management",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 5,
+                "Score": 3
+            },
+            {
+                "DocID": 6,
+                "Score": 2
+            },
+            {
+                "DocID": 1,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "Elemental diet liquid nutrients",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 7,
+                "Score": 3
+            },
+            {
+                "DocID": 21,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Elimination diet food allergy intolerance",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 8,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Low-FODMAP diet irritable bowel syndrome",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 22,
+                "Score": 3
+            },
+            {
+                "DocID": 13,
+                "Score": 2
+            },
+            {
+                "DocID": 10,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "Renal diet chronic kidney disease",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 23,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Specific carbohydrate diet IBD",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 25,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Gluten ataxia autoimmune disease",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 14,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            },
+            {
+                "DocID": 9,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "Dermatitis herpetiformis blistering skin condition",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 15,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            },
+            {
+                "DocID": 12,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Wheat allergy IgE-mediated response",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 16,
+                "Score": 3
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Gluten-free casein-free diet autism",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 17,
+                "Score": 3
+            },
+            {
+                "DocID": 25,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "Casein phosphoproteins mammalian milk",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 18,
+                "Score": 3
+            },
+            {
+                "DocID": 17,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Soft diet difficulty chewing swallowing",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 24,
+                "Score": 3
+            },
+            {
+                "DocID": 21,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Non-celiac gluten sensitivity symptoms",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 13,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Hypertension major risk factor",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 2,
+                "Score": 3
+            },
+            {
+                "DocID": 1,
+                "Score": 2
+            },
+            {
+                "DocID": 3,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "Blood pressure systolic diastolic mmHg",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 3,
+                "Score": 3
+            },
+            {
+                "DocID": 2,
+                "Score": 2
+            },
+            {
+                "DocID": 1,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "Gluten structural protein complex",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 10,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            },
+            {
+                "DocID": 12,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Epilepsy recurrent unprovoked seizures",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 20,
+                "Score": 3
+            },
+            {
+                "DocID": 19,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "US Department of Health and Human Services agencies",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 4,
+                "Score": 3
+            },
+            {
+                "DocID": 1,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "Dietary Approaches to Stop Hypertension NIH",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 1,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "FODMAPs fermentable carbohydrates",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 22,
+                "Score": 3
+            },
+            {
+                "DocID": 13,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "GAPS Diet neurological conditions",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 25,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Coeliac disease small intestine inflammation",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 12,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What eating plan is recommended for managing elevated blood pressure?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 1,
+                "Score": 3
+            },
+            {
+                "DocID": 2,
+                "Score": 2
+            },
+            {
+                "DocID": 3,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "How can food choices impact epileptic seizure frequency?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 3
+            },
+            {
+                "DocID": 20,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What are the necessary dietary changes for an autoimmune condition triggered by wheat proteins?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 12,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What nutritional advice is given for individuals with consistently high blood glucose?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 5,
+                "Score": 3
+            },
+            {
+                "DocID": 6,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "When is a diet composed solely of easily absorbed liquids prescribed?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 7,
+                "Score": 3
+            },
+            {
+                "DocID": 21,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What method helps identify foods causing adverse physiological reactions?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 8,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Which dietary regimen helps alleviate digestive discomfort in irritable bowel syndrome by limiting certain carbohydrates?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 22,
+                "Score": 3
+            },
+            {
+                "DocID": 13,
+                "Score": 2
+            },
+            {
+                "DocID": 9,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "What are the dietary considerations for maintaining electrolyte balance with compromised kidney function?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 23,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Describe eating patterns that focus on preventing and managing high blood sugar.",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 5,
+                "Score": 3
+            },
+            {
+                "DocID": 6,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What is an eating plan rich in fruits, vegetables, and whole grains, aiming for heart health?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 1,
+                "Score": 3
+            },
+            {
+                "DocID": 2,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "What protein component in dairy is often a concern for food sensitivities?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 18,
+                "Score": 3
+            },
+            {
+                "DocID": 17,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "How do central nervous system issues lead to lack of muscle coordination and gait problems?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 14,
+                "Score": 3
+            },
+            {
+                "DocID": 20,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "What is a skin condition characterized by intensely itchy blisters linked to intestinal inflammation?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 15,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            },
+            {
+                "DocID": 12,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What are the allergic responses to components found in wheat products?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 16,
+                "Score": 3
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            },
+            {
+                "DocID": 13,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Is there scientific evidence supporting specific dietary exclusions for behavioral conditions like autism?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 17,
+                "Score": 3
+            },
+            {
+                "DocID": 25,
+                "Score": 2
+            },
+            {
+                "DocID": 9,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "Which type of modified eating requires foods to be mashed or pureed due to chewing difficulties?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 24,
+                "Score": 3
+            },
+            {
+                "DocID": 21,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "What diet allows monosaccharides but restricts disaccharides and polysaccharides for intestinal health?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 25,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "How do governmental health agencies oversee medical research and public health initiatives in the United States?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 4,
+                "Score": 3
+            },
+            {
+                "DocID": 1,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "What are the common measurements and influencing factors for arterial fluid pressure?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 3,
+                "Score": 3
+            },
+            {
+                "DocID": 2,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Describe the properties of the protein complex responsible for elasticity in baked goods.",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 10,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What conditions are grouped under the umbrella term for sensitivities to proteins in certain grains?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 11,
+                "Score": 3
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            },
+            {
+                "DocID": 12,
+                "Score": 2
+            },
+            {
+                "DocID": 13,
+                "Score": 2
+            },
+            {
+                "DocID": 15,
+                "Score": 2
+            },
+            {
+                "DocID": 16,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What are the main symptoms and diagnostic methods for persistent high sugar levels in the blood?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 6,
+                "Score": 3
+            },
+            {
+                "DocID": 5,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What kind of diet is prescribed before or after surgery involving the digestive tract?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 21,
+                "Score": 3
+            },
+            {
+                "DocID": 24,
+                "Score": 2
+            },
+            {
+                "DocID": 7,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "How can a physician determine if a patient has an adverse reaction to a particular food component?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 8,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What is the primary function of the body's internal system for regulating glucose from food?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 6,
+                "Score": 3
+            },
+            {
+                "DocID": 5,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What are the effects of consuming excessive dietary salt on the body's fluid pressure systems?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 2,
+                "Score": 3
+            },
+            {
+                "DocID": 1,
+                "Score": 2
+            },
+            {
+                "DocID": 3,
+                "Score": 2
+            },
+            {
+                "DocID": 23,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What constitutes a chronic tendency for unprovoked abnormal electrical activity in the brain?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 20,
+                "Score": 3
+            },
+            {
+                "DocID": 19,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Which specific centers participated in the original DASH study, beyond Johns Hopkins?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 1,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "In what year did William Harvey describe the circulation of blood in 'De motu cordis'?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 2,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What is the typical mean systemic pressure measured after cessation of heart beat?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 3,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Which HHS agency was removed in 1995 to become an independent executive branch agency?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 4,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Who developed the 'exchange scheme' for diabetic patients in the 1950s?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 5,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What percentage of current diabetes cases worldwide are classified as type 2?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 6,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "In one study, what percentage of children could not tolerate the taste of an elemental diet?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 7,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Who first proposed the concept of the elimination diet in 1926?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 8,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "According to a Columbia University Medical Center study, what percentage of restaurant foods labeled gluten-free contained over 20 parts per million of gluten?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 9,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What percentage of total protein in bread wheat is typically made up by gluten?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 10,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What was the median age of onset for non-celiac gluten sensitivity in a prospective study among adults?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 11,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Who gave the first modern-day description of coeliac disease in children in an 1887 lecture?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 12,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Which specific wheat components, other than gliadin, are potent activators of the innate immune system?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 13,
+                "Score": 3
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What percentage of ataxias of unknown origin are accounted for by gluten ataxia?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 14,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "What is the main autoantigen in dermatitis herpetiformis?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 15,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What type of gliadin is most potent in wheat-dependent exercise-induced anaphylaxis?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 16,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Which scientist first proposed a connection between autism and opiates in 1979?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 17,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What is the isoelectric point of casein?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 18,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Who coined the term 'ketogenic diet' in 1921?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What percentage of individuals referred to epilepsy centers are diagnosed with psychogenic non-epileptic seizures?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 20,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What is the typical caloric content of a clear liquid diet per day?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 21,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What year was the FODMAP concept first published?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 22,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What is the recommended maximum intake restriction of dietary phosphorus per day for CKD patients, according to KDOQI?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 23,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Which international initiative developed a standardized framework for labeling texture-modified foods and liquids?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 24,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Who re-popularized the Specific Carbohydrate Diet in her 1996 book 'Breaking the Vicious Cycle'?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 25,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What specific components of suntan lotion could negate ketosis?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "In which ancient text are epileptic seizures listed as a reason to return a purchased slave?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 20,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "DASH diett for blood pressure",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 1,
+                "Score": 3
+            },
+            {
+                "DocID": 2,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Keyto diet for epilipsy",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 3
+            },
+            {
+                "DocID": 20,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Gluten fre diet benefits",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 9,
+                "Score": 3
+            },
+            {
+                "DocID": 12,
+                "Score": 3
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Diabeticc eating plan",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 5,
+                "Score": 3
+            },
+            {
+                "DocID": 6,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Hipertension symptoms",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 2,
+                "Score": 3
+            },
+            {
+                "DocID": 3,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Elemantal nufrition",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 7,
+                "Score": 3
+            },
+            {
+                "DocID": 21,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Elminiation diet for intolerences",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 8,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Low FODMAP diete for IBS",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 22,
+                "Score": 3
+            },
+            {
+                "DocID": 13,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Renal diete considerations",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 23,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Coeliac diasease causes",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 12,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Glootun sensitivity disorders",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 11,
+                "Score": 3
+            },
+            {
+                "DocID": 10,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            },
+            {
+                "DocID": 13,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Casein proteen in milk",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 18,
+                "Score": 3
+            },
+            {
+                "DocID": 17,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "GFCF diiet for kidz with autism",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 17,
+                "Score": 3
+            },
+            {
+                "DocID": 25,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "Alergy to wheat",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 16,
+                "Score": 3
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Gluton ataksia treatment",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 14,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Dermatitis herpetiformiss skin rash",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 15,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "US Department of Health and Human Servics",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 4,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Blud pressure range",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 3,
+                "Score": 3
+            },
+            {
+                "DocID": 2,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Lickwid diet for surgery recovery",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 21,
+                "Score": 3
+            },
+            {
+                "DocID": 24,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Specific carbahydrate diet",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 25,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Autsim diet recomendations",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 17,
+                "Score": 3
+            },
+            {
+                "DocID": 25,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Epilapsy manegment options",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 20,
+                "Score": 3
+            },
+            {
+                "DocID": 19,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "N.C.G.S. symptoms and treatment",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 13,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Low protien renal diet",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 23,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Hard-to-control epilipsy diet",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 3
+            },
+            {
+                "DocID": 20,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Medical guidelines for children with celiac disease",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 12,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Chronic autoimmune disease small intestine",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 12,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Gastrointestinal disorders elemental diet",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 7,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Type 2 diabetes lifestyle factors",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 6,
+                "Score": 3
+            },
+            {
+                "DocID": 5,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Fluid and electrolyte balance renal diet",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 23,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Nutritional deficiencies gluten-free diet",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 9,
+                "Score": 3
+            },
+            {
+                "DocID": 12,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Modified Atkins diet epilepsy treatment",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 3
+            },
+            {
+                "DocID": 20,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Hypotension low blood pressure",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 3,
+                "Score": 3
+            },
+            {
+                "DocID": 2,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "Medical nutrition therapy ketogenic diet",
+        "Type": "Lexical",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What is the recommended approach for individuals whose body cannot properly excrete copper, leading to neurological impairments?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 14,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "How can diet influence bone health in the context of kidney conditions?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 23,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What kind of eating regimen helps to reproduce the benefits of fasting for neurological conditions?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 3
+            },
+            {
+                "DocID": 20,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "How do genetic factors contribute to the risk of developing elevated blood sugar?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 6,
+                "Score": 3
+            },
+            {
+                "DocID": 5,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "What are the common issues and risks associated with removing multiple food groups from a child's eating plan?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 17,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            },
+            {
+                "DocID": 25,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What is the historical perspective on treating chronic diseases with dietary interventions?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 2
+            },
+            {
+                "DocID": 5,
+                "Score": 2
+            },
+            {
+                "DocID": 2,
+                "Score": 1
+            },
+            {
+                "DocID": 6,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "Describe methods to measure and understand the pressure exerted by circulating fluid against vessel walls.",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 3,
+                "Score": 3
+            },
+            {
+                "DocID": 2,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What are the health implications of delayed diagnosis for an autoimmune gut condition?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 12,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What is an eating strategy that avoids products containing a specific protein complex found in grains?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 9,
+                "Score": 3
+            },
+            {
+                "DocID": 12,
+                "Score": 2
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Which medical dietary therapy involves consuming foods that melt at room temperature?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 21,
+                "Score": 3
+            },
+            {
+                "DocID": 24,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What are the risks of consuming milk proteins if one has a specific intolerance?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 18,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What are the challenges in identifying and managing adverse reactions to food additives and natural chemicals?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 8,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What causes severe skin blistering that is a manifestation of an underlying gut condition?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 15,
+                "Score": 3
+            },
+            {
+                "DocID": 12,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What causes the body's immune system to overreact to wheat components, sometimes leading to anaphylaxis?",
+        "Type": "Semantic",
+        "Matches": [
+            {
+                "DocID": 16,
+                "Score": 3
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Who funded the research into 'the ketosis of starvation' at Johns Hopkins Hospital in the 1920s?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What was the name of the first modern study of fasting for epilepsy, conducted in France in 1911?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What were the results of the 2020 study by the Leibniz-Institute for Food Systems Biology regarding gluten levels in modern wheat cultivars?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 10,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Which religious denomination states that for a valid Eucharist, the bread must be made from wheat?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 12,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What is the typical average daily intake of gluten in Europe?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 10,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What animal models are widely used in epilepsy research?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 20,
+                "Score": 3
+            },
+            {
+                "DocID": 19,
+                "Score": 1
+            }
+        ]
+    },
+    {
+        "Query": "What term is used for blood pressure increase upon standing?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 3,
+                "Score": 3
+            },
+            {
+                "DocID": 2,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Which specific gene mutations cause Maturity-onset diabetes of the young (MODY)?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 6,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Which year was the connection between Dermatitis Herpetiformis and Coeliac disease recognized?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 15,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What compounds are responsible for the bitter taste of hydrolyzed casein supplements?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 18,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What is the role of Interleukin 17 in increasing production of immune system chemical signals in hypertension?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 2,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What ancient physician described the symptoms of 'C\u0153liac Affection' in the 2nd century CE?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 12,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Which specific amino acid difference distinguishes A1 and A2 beta-caseins?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 18,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "In which continent is the fastest prevalence increase of diabetes expected to occur by 2030?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 6,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Which specific minerals and nutrients are often found to be deficient in coeliac disease?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 12,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What were the primary findings of the 2013 double-blind, placebo-controlled challenge by Biesiekierski et al. for IBS and NCGS?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 13,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Which hormone acts in the opposite manner to insulin in regulating glucose levels?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 6,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What is the specific name for the phenomenon where an elemental diet reduces gut motility and secretions?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 7,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What is the recommended sodium intake in mg/day for adults with elevated blood pressure?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 1,
+                "Score": 3
+            },
+            {
+                "DocID": 2,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What specific peptides are responsible for triggering gluten-related disorders like celiac disease?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 10,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            },
+            {
+                "DocID": 12,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Which specific genes are involved in the HLA-DQ2.5 haplotype related to celiac disease?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 12,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Who wrote the 1996 book 'Breaking the Vicious Cycle'?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 25,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What specific name did Christian Archibald Herter use for coeliac disease in his 1908 book on children?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 12,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What drug treatments have been used to control ataxia, besides physical therapy?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 14,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What enzyme is primarily responsible for clotting milk during cheese-making?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 18,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Which specific type of cells are lost in the cerebellum due to gluten exposure in gluten ataxia?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 14,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "What are the four reasons kidney stone formation is associated with the ketogenic diet?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "According to the ILAE, what is the definition of resolved epilepsy?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 20,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "What specific types of carbonated drinks are allowed on a clear liquid diet?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 21,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Which specific types of foods are restricted on a mechanical soft diet due to small seeds?",
+        "Type": "Deep-Link",
+        "Matches": [
+            {
+                "DocID": 24,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "DASH diett health",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 1,
+                "Score": 3
+            },
+            {
+                "DocID": 2,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Ketogenic diete side efects",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 19,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Gluten-freee for celiac",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 9,
+                "Score": 3
+            },
+            {
+                "DocID": 12,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Diabetik diet recomendations",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 5,
+                "Score": 3
+            },
+            {
+                "DocID": 6,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Hypertenssion treatement",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 2,
+                "Score": 3
+            },
+            {
+                "DocID": 1,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Elementall diet SIBO",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 7,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Eliminatin diet diagnostic",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 8,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Low FOdMAP diet",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 22,
+                "Score": 3
+            },
+            {
+                "DocID": 13,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Reanal diet for kidney",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 23,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Coeliac disese symptoms",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 12,
+                "Score": 3
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Glutun intolerance disorders",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 11,
+                "Score": 3
+            },
+            {
+                "DocID": 10,
+                "Score": 3
+            },
+            {
+                "DocID": 13,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Casein alllergy",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 18,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "GF CF diet autism",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 17,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Wheat alergy symtoms",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 16,
+                "Score": 3
+            },
+            {
+                "DocID": 10,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Gluten atacksia",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 14,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Dermatitis herpetiformiss cause",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 15,
+                "Score": 3
+            },
+            {
+                "DocID": 12,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "US Departemnt of Health and Human Services",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 4,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Bloood pressure reading",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 3,
+                "Score": 3
+            },
+            {
+                "DocID": 2,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Liquid dait for medical use",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 21,
+                "Score": 3
+            },
+            {
+                "DocID": 7,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Specific carbohdyrate diet",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 25,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Epilepssy diagnosis",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 20,
+                "Score": 3
+            },
+            {
+                "DocID": 19,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Non-celiac glutten sensetivity",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 13,
+                "Score": 3
+            },
+            {
+                "DocID": 11,
+                "Score": 2
+            },
+            {
+                "DocID": 9,
+                "Score": 2
+            }
+        ]
+    },
+    {
+        "Query": "Softt diet for dental work",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 24,
+                "Score": 3
+            }
+        ]
+    },
+    {
+        "Query": "Diabetes melitus symptoms",
+        "Type": "Tolerant",
+        "Matches": [
+            {
+                "DocID": 6,
+                "Score": 3
+            },
+            {
+                "DocID": 5,
+                "Score": 2
+            }
+        ]
+    }
+]

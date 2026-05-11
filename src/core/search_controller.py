@@ -2,15 +2,17 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
-from algorithms import edit_distance as E
-from algorithms import jaccard as J
-from algorithms import kgrams as K
-from algorithms import metaphone_search as M
-from builders import inverted_index_builder as B
+from src.ToleranceRet.algorithms import edit_distance as E
+from src.ToleranceRet.algorithms import jaccard as J
+from src.ToleranceRet.algorithms import kgrams as K
+from src.ToleranceRet.algorithms import metaphone_search as M
+from src.ToleranceRet.builders import inverted_index_builder as B
+from src.AdvancedRet.semanticsearch.semantic_search import semantic_search
+from src.AdvancedRet.queryexpansion.queryexpansion import expand_query_with_llm
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-INDEX_FILE = PROJECT_ROOT / "indexs" / "inverted_index.json"
-DOCS_FILE = PROJECT_ROOT / "scientific_diets.json"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+INDEX_FILE = PROJECT_ROOT /"data" / "indexs" / "inverted_index.json"
+DOCS_FILE = PROJECT_ROOT / "data" / "scientific_diets.json"
 
 # 1. Initialize empty dictionaries so the app survives missing files
 index_db = {}
@@ -132,3 +134,39 @@ def run_jaccard_search(query):
         return max(candidates, key=lambda c: J.jaccard_similarity(token, c)) if candidates else None
         
     return _process_search(query, get_match)
+
+def format_semantic_results(query_str, results_list, original_query=None):
+    """Special formatter for Semantic Search that includes text snippets."""
+    if not results_list:
+        return f"No semantic matches found for '{query_str}'."
+    
+    output = ""
+    if original_query:
+        output += f"Original Query: '{original_query}'\n"
+        output += f"Expanded Query: '{query_str}'\n"
+    else:
+        output += f"Showing semantic matches for: '{query_str}'\n"
+        
+    output += "-" * 70 + "\n"
+    for r in results_list:
+        # Clean up the snippet to fit nicely in the text box
+        clean_snippet = r.get('best_chunk', '').replace('\n', ' ').strip()
+        short_snippet = clean_snippet[:100] + "..." if len(clean_snippet) > 100 else clean_snippet
+        
+        output += f"Score: {r['score']:.4f} | DocID: {r['doc_id']:2} | Title: {r['title']}\n"
+        output += f"  Snippet: {short_snippet}\n\n"
+    
+    return output
+
+def run_semantic_search(query):
+    # Calls your ChromaDB search
+    raw_results = semantic_search(query, top_k_chunks=20, top_k_docs=5)
+    return format_semantic_results(query, raw_results)
+
+def run_expansion_search(query):
+    # 1. Expand with Gemini
+    expanded_query = expand_query_with_llm(query)
+    # 2. Search with the new expanded query
+    raw_results = semantic_search(expanded_query, top_k_chunks=20, top_k_docs=5)
+    # 3. Format and show both the original and new queries
+    return format_semantic_results(expanded_query, raw_results, original_query=query)

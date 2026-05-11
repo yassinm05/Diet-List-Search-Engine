@@ -2,9 +2,9 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from builders import kgram_index_builder as K
+from src.ToleranceRet.builders import kgram_index_builder as K
 
-DEFAULT_INDEX_FILE = Path(__file__).resolve().parents[1] / "indexs" / "k_gram_index.json"
+DEFAULT_INDEX_FILE = Path(__file__).resolve().parents[3] /"data"/ "indexs" / "k_gram_index.json"
 
 def k_grams(query, input_file=DEFAULT_INDEX_FILE):
     query = query.lower()

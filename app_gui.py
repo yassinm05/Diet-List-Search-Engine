@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
-from controllers import search_controller as sc
+from pathlib import Path
+
+from src.core import search_controller as sc
 
 def handle_search(entry_widget, result_box, search_type):
     query = entry_widget.get().strip()
@@ -22,6 +24,10 @@ def handle_search(entry_widget, result_box, search_type):
         results = sc.run_smart_search(query)
     elif search_type == "jaccard":
         results = sc.run_jaccard_search(query)
+    elif search_type == "semantic":
+        results = sc.run_semantic_search(query)
+    elif search_type == "expansion":
+        results = sc.run_expansion_search(query)
         
     result_box.insert(tk.END, results)
 
@@ -91,7 +97,8 @@ def main():
     create_tab(notebook, "Phonetic", "phonetic", "Tolerant Retrieval: Metaphone Matching")
     create_tab(notebook, "Smart Search", "smart", "Combined Engine: Exact Fallback to Tolerant Algorithms")
     create_tab(notebook, "Jaccard", "jaccard", "Tolerant Retrieval: Jaccard Coefficient Scoring")
-    
+    create_tab(notebook, "Semantic", "semantic", "AI Context Search: Sentence Transformers + ChromaDB")
+    create_tab(notebook, "Query Expansion", "expansion", "LLM Expanded Search: Gemini Synonyms + Semantic")
     root.mainloop()
 
 if __name__ == "__main__":

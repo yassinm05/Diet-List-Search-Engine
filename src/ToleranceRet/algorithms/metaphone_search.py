@@ -2,7 +2,7 @@ import json
 import jellyfish
 from pathlib import Path
 
-DEFAULT_INDEX_FILE = Path(__file__).resolve().parents[1] / "indexs" / "metaphone_index.json"
+DEFAULT_INDEX_FILE = Path(__file__).resolve().parents[3] /"data"/ "indexs" / "metaphone_index.json"
 
 
 def phonetic_candidates(query_word, index_file=DEFAULT_INDEX_FILE):
