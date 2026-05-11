@@ -1,0 +1,7 @@
+Engine,Precision@5,Recall@5,MRR
+1_K-Grams,0.2807,0.751,0.6778
+2_Metaphone,0.2796,0.7491,0.6725
+3_Jaccard,0.2807,0.751,0.6783
+4_SmartSearch,0.2807,0.7547,0.6832
+5_Semantic,0.3425,0.9418,0.9535
+6_Semantic_Expansion,0.3425,0.9418,0.9535
